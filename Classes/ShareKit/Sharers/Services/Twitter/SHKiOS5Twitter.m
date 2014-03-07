@@ -43,6 +43,12 @@
 	return @"SHKTwitter";
 }
 
+
++ (BOOL)canShareURL
+{
+	return YES;
+}
+
 - (void)share {
     
     if ([self.item shareType] == SHKShareTypeUserInfo) {
